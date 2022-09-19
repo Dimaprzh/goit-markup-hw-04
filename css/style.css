@@ -2,7 +2,8 @@
   --primary-color: #212121;
   --sencondary-color: #757575;
   --active-color: #2196f3;
-  --about-background: #F5F4FA; 
+  --about-background: #F5F4FA;
+  --social-link:  #AFB1B8;
 }
 
 h1,
@@ -55,7 +56,6 @@ a{
   padding-right: 15px;
   margin: 0 auto;
   padding-top: 24px;
-  border-bottom: 1px solid #ececec;
   align-items: center;
   padding-bottom: 25px;
 }
@@ -158,11 +158,14 @@ a{
   background-size: cover;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
    url(../images/heroimg.jpg);
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  border-top: 1px solid #ececec;
 }
 
 .hero-wrapper {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  
   text-align: center;
 }
 
@@ -271,6 +274,7 @@ a{
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   margin-top: 50px;
   border-radius: 4px;
+  background-color: #ffffff;
 }
  
 .team-title {
@@ -325,7 +329,7 @@ a{
   justify-content: center;
   display: flex;
   border-radius: 50%;
-  fill: var(--sencondary-color);
+  fill: var(--social-link);
   
 }
 
@@ -350,36 +354,29 @@ a{
 }
 
 .client-card{
-  display: flex;
-  width: 170px;
-  height: 92px;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #AFB1B8;
-  margin-top: 50px;
-  fill: var(--sencondary-color);
+  
   margin: 15px;     
 }
 
 .client-logo{
-  fill: var(--sencondary-color);
+  fill: var(--social-link);
+  border: 1px solid #AFB1B8;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  width: 170px;
+  display: flex;
+  margin-top: 50px;
 }
 
-.client-card:hover,
-.client-card:focus{
-  fill: var(--active-color);
-  border: solid var(--active-color);
-}
+
 .client-logo:hover,
 .client-logo:focus{
   fill: var(--active-color);
+  border: solid var(--active-color);
 }
 
-.client-card:hover,
-.client-card:focus{
-  fill: var(--active-color);
-  border: 1px solid var(--active-color);
-}
+
 
 .footer {
   background-color: #2f303a;
@@ -476,6 +473,10 @@ a{
   background-color: var(--active-color);
 }
 
+.menu{
+  border-top: 1px solid #ececec;
+}
+
 .menu-list {
   display: flex;
   align-items: center;
@@ -519,7 +520,7 @@ a{
 
 .project-item {
   width: 370px;
-  padding-top: 34px;
+  margin-top: 34px;
   margin-right: 30px;
 }
 
